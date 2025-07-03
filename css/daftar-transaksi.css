@@ -1,0 +1,88 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .transaksi-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .transaksi-item {
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .transaksi-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .transaksi-detail {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .transaksi-detail h3 {
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    .transaksi-detail p {
+      margin: 2px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .hapus-btn {
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hapus-btn:hover {
+      background-color: #c0392b;
+    }
+
+    @media (max-width: 600px) {
+      .transaksi-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .transaksi-item img {
+        margin-bottom: 10px;
+      }
+
+      .hapus-btn {
+        align-self: flex-end;
+      }
+    }

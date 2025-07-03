@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transaksi - SepatuKita</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/transaksi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+   <a href="index.html" class="logo">Sepatu<span>Kita</span></a>
+
+    <nav id="nav-menu">
+  <ul>
+    <li><a href="beranda.html">Beranda</a></li>
+    <li id="transaksi-item" style="display: none;"><a href="transaksi.html">Transaksi</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li id="login-item"><a href="login.html" id="loginLink">Login</a></li>
+    <li id="logout-item" style="display: none;"><a href="#" id="logoutLink">Logout</a></li>
+  </ul>
+</nav>
+    </nav>
+  </header>
+
+  <!-- Transaksi Form -->
+  <section class="transaksi-section">
+    <div class="container">
+      <h2>Formulir Transaksi</h2>
+
+     <div class="produk-detail">
+  <img id="produk-img" src="" alt="Produk Dipilih">
+  <div>
+    <h3 id="produk-nama">Nama Produk</h3>
+    <p>Harga: <strong id="produk-harga"></strong></p>
+  </div>
+</div>
+
+
+        <form id="form-transaksi">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" required>
+
+          <label for="alamat">Alamat Lengkap</label>
+          <textarea id="alamat" rows="4" required></textarea>
+
+          <label for="metode">Metode Pembayaran</label>
+          <select id="metode" required>
+            <option value="">-- Pilih --</option>
+            <option value="transfer">Transfer Bank</option>
+            <option value="cod">Cash on Delivery (COD)</option>
+          </select>
+
+          <button type="submit">Lakukan Pembayaran</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SepatuKita. All rights reserved.</p>
+  </footer>
+
+    <script src="js/transaksi.js"></script>
+
+  
+</body>
+</html>
